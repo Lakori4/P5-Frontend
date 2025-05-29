@@ -1,6 +1,7 @@
 import { Cookie, getCookies, setCookie } from "@std/http/cookie";
 import { FreshContext, Handlers, PageProps } from "$fresh/server.ts";
 import Form from "../components/Form.tsx";
+import ChangeColor from "../islands/ChangeColor.tsx";
 
 export const handler:Handlers = {
     GET: (req:Request, ctx:FreshContext<unknown, string>) => {
@@ -25,4 +26,4 @@ export const handler:Handlers = {
 }
 
 
-export default (props:PageProps<string>) => !props.data ? <Form/> : <h1>Hola, {props.data}</h1>
+export default (props:PageProps<string>) => !props.data ? <ChangeColor/> : <h1>Hola, {props.data}</h1>
