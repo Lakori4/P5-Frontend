@@ -1,31 +1,36 @@
-.white {
-  background-color: #f0f0f0;
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: absolute;
+}
+
+.container {
+  position: absolute;
+}
+
+.fullscreen {
   width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.white {
+  background-color: #f0f0f0;
 }
 
 .light-brown {
   background-color: #b9ac9e;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .light-blue {
   background-color: #a9bfd4;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 .orange {
   background-color: #eab676;
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
 }
